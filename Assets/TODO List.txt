@@ -1,0 +1,20 @@
+TODO:
+- Unity UI Toolkit
+- SVGs 
+- Start and Quit Game
+- Coins
+- Choose Level
+- Choose Skins
+- Adjust Game Graphics
+- Remap controls
+- Adjust Master, BGM and SFX
+- Localization Functionality
+- In app Purchase Menu
+- Ads
+- Cloud Save
+- Controller Support
+- Achievements
+- Credits
+- Pause Menu
+
+- Windows and Android
