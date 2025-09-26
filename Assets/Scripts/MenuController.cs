@@ -20,28 +20,29 @@ public class MenuController : MonoBehaviour
         _exitButton = _document.rootVisualElement.Q<Button>("Exit_Button");
 
         _playButton.clicked += PlayButtonOnClicked;
+        // _playButton.RegisterCallback<ClickEvent>(PlayButtonOnClicked);
         _settingsButton.clicked += SettingsButtonOnClicked;
         _creditsButton.clicked += CreditsButtonOnClicked;
         _exitButton.clicked += ExitButtonOnClicked;
     }
 
-    private void PlayButtonOnClicked()
+    private static void PlayButtonOnClicked()
     {
         Debug.Log("Play Clicked");
         // SceneManager.LoadScene("Demo_URP");
     }
 
-    private void SettingsButtonOnClicked()
+    private static void SettingsButtonOnClicked()
     {
         Debug.Log("Settings Clicked");
     }
 
-    private void CreditsButtonOnClicked()
+    private static void CreditsButtonOnClicked()
     {
         Debug.Log("Credits Clicked");
     }
 
-    private void ExitButtonOnClicked()
+    private static void ExitButtonOnClicked()
     {
         Debug.Log("Exit Clicked");
         // Application.Quit();

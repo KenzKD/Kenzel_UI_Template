@@ -1,18 +1,18 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/StyleSheets/Main_Menu_Styles.uss?fileID=7433441132597879392&amp;guid=479a7ed087794af46aa6a7f62fe690e5&amp;type=3#Main_Menu_Styles" />
-    <ui:VisualElement name="VisualElement" style="flex-grow: 1; margin-top: 2.5%; margin-right: 2.5%; margin-bottom: 2.5%; margin-left: 2.5%; padding-top: 2.5%; padding-right: 2.5%; padding-bottom: 2.5%; padding-left: 2.5%;">
+    <ui:VisualElement name="SettingsMenu" class="Menu-Container" style="flex-grow: 1; margin-top: 2.5%; margin-right: 2.5%; margin-bottom: 2.5%; margin-left: 2.5%; padding-top: 2.5%; padding-right: 2.5%; padding-bottom: 2.5%; padding-left: 2.5%;">
         <ui:Label text="Game Title" name="Menu_Title" class="Main-Title" style="-unity-text-align: upper-center; font-size: 100px;">
             <Bindings>
                 <UnityEngine.Localization.LocalizedString property="text" table="GUID:f88ff249b95146949904fd54417d9469" entry="Id(206177677312)" />
             </Bindings>
         </ui:Label>
-        <ui:VisualElement name="ButtonGroup" style="flex-grow: 1; margin-top: 5%; margin-right: 5%; margin-bottom: 5%; margin-left: 5%; padding-top: 2.5%; padding-right: 2.5%; padding-bottom: 2.5%; padding-left: 2.5%; justify-content: space-evenly; align-self: center; align-content: auto;">
+        <ui:VisualElement name="ButtonGroup" style="flex-grow: 1; margin-top: 5%; margin-right: 5%; margin-bottom: 5%; margin-left: 5%; padding-top: 2.5%; padding-right: 2.5%; padding-bottom: 2.5%; padding-left: 2.5%; justify-content: space-evenly; align-self: center; align-content: auto; display: flex; opacity: 1;">
             <ui:Button text="Play" name="Play_Button" class="Menu-Button">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:f88ff249b95146949904fd54417d9469" entry="Id(154642264064)" />
                 </Bindings>
             </ui:Button>
-            <ui:Button text="Settings" name="Settings_Button" class="Menu-Button">
+            <ui:Button text="Settings" name="Settings_Button" enabled="true" class="Menu-Button" style="display: flex; visibility: visible; overflow: hidden;">
                 <Bindings>
                     <UnityEngine.Localization.LocalizedString property="text" table="GUID:f88ff249b95146949904fd54417d9469" entry="Id(206177677312)" />
                 </Bindings>

@@ -46,3 +46,16 @@
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out-sine;
 }
+
+.Menu-Container {
+    opacity: 1;
+    transition-timing-function: ease-in-out-sine;
+    transition-duration: 0.15s;
+}
+
+.Menu-Container:hover {
+    opacity: 0;
+    display: flex;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out-sine;
+}
