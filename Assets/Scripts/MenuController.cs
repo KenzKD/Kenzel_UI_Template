@@ -15,21 +15,13 @@ public class MenuController : MonoBehaviour
         _document = GetComponent<UIDocument>();
         _root = _document.rootVisualElement;
         
-        _playButton = _root.Q<Button>("Play_Button");
-        _playButton.RegisterClickEvent(PlayButtonOnClicked);
-        
-        _settingsButton = _root.Q<Button>("Settings_Button");
-        _settingsButton.RegisterClickEvent(SettingsButtonOnClicked);
-        
-        _creditsButton = _root.Q<Button>("Credits_Button");
-        _creditsButton.RegisterClickEvent(CreditsButtonOnClicked);
-        
-        _exitButton = _root.Q<Button>("Exit_Button");
-        _exitButton.RegisterClickEvent(ExitButtonOnClicked);
+        _playButton = _root.SetupButton("Play_Button",PlayButtonOnClicked);
+        _settingsButton  = _root.SetupButton("Settings_Button",SettingsButtonOnClicked);
+        _creditsButton = _root.SetupButton("Credits_Button",CreditsButtonOnClicked);
+        _exitButton = _root.SetupButton("Exit_Button",ExitButtonOnClicked);
     }
-    
-    
 
+    #region ButtonClickFunctions
     private static void PlayButtonOnClicked(MouseDownEvent evt)
     {
         Debug.Log("Play Clicked");
@@ -49,6 +41,16 @@ public class MenuController : MonoBehaviour
     private static void ExitButtonOnClicked(MouseDownEvent evt)
     {
         Debug.Log("Exit Clicked");
-        // Application.Quit();
+        Application.Quit();
     }
+    #endregion
+
+    #region MenuFunctions
+
+    private void FadeMenu()
+    {
+        
+    }
+
+    #endregion
 }

@@ -54,8 +54,9 @@
 }
 
 .Menu-Container:hover {
-    opacity: 0;
+    opacity: 1;
     display: flex;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out-sine;
+    visibility: visible;
 }
