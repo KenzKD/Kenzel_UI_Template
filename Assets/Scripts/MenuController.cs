@@ -16,11 +16,18 @@ public class MenuController : MonoBehaviour
 
     private UIDocument _document;
     private VisualElement _root;
+    private VisualElement _mainMenuContainer;
+    private VisualElement _settingsContainer;
 
     private void Awake()
     {
         _document = GetComponent<UIDocument>();
         _root = _document.rootVisualElement;
+        
+        _mainMenuContainer = _root.Q<VisualElement>("Main_Menu_Container");
+        _mainMenuContainer.style.display = DisplayStyle.Flex;   
+        
+        _settingsContainer = _root.Q<VisualElement>("Settings_Menu_Container");
 
         _playButton.SetupButton(_root, PLAY_BUTTON_NAME, PlayButtonOnClicked);
         _settingsButton.SetupButton(_root, SETTINGS_BUTTON_NAME, SettingsButtonOnClicked);
@@ -35,9 +42,11 @@ public class MenuController : MonoBehaviour
         // SceneManager.LoadScene("Demo_URP");
     }
 
-    private static void SettingsButtonOnClicked()
+    private void SettingsButtonOnClicked()
     {
         Debug.Log("Settings Clicked");
+        _mainMenuContainer.style.display = DisplayStyle.None;  
+        _settingsContainer.style.display = DisplayStyle.Flex;
     }
 
     private static void CreditsButtonOnClicked()
@@ -56,7 +65,7 @@ public class MenuController : MonoBehaviour
 
     private void FadeMenu()
     {
-
+        
     }
 
     #endregion

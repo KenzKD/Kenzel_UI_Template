@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 581360744}
   - component: {fileID: 581360743}
   - component: {fileID: 581360745}
+  - component: {fileID: 581360746}
   m_Layer: 5
   m_Name: Main_UIDocument
   m_TagString: Untagged
@@ -451,6 +452,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe0b522e0b3ff148ae3725103566ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
+--- !u!114 &581360746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581360742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96c43f4468f74a4591001d392160ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GraphicSettingsController
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
