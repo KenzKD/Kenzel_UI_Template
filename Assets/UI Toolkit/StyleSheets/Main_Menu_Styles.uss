@@ -41,10 +41,11 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
     -unity-text-outline-width: 2.5px;
-    translate: 0 5%;
-    rotate: 10deg;
+    translate: 0 0%;
+    rotate: 0 0 0 0;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out-sine;
+    scale: 1.25 1.25 1.25;
 }
 
 .Menu-Button:focus {
@@ -65,10 +66,11 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
     -unity-text-outline-width: 2.5px;
-    translate: 0 5%;
-    rotate: 10deg;
+    translate: 0 0%;
+    rotate: 0 0 0 0;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out-sine;
+    scale: 1.25 1.25 1.25;
 }
 
 .Menu-Container {
